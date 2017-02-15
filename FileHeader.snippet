@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>File Header</Title>
+        <Author>Satheesh</Author>
+        <Shortcut>copyright</Shortcut>
+        <Description>Adds a file header comment with company and copyright information.</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>FileName</ID>
+                <ToolTip>The current file name.</ToolTip>
+                <Default>FileName</Default>
+            </Literal>
+            <Literal>
+                <ID>CompanyName</ID>
+                <ToolTip>The name of the company holding the copyright.</ToolTip>
+                <Default>PHM</Default>
+            </Literal>
+        </Declarations>
+        <Code Language="CSharp">
+        <![CDATA[//-----------------------------------------------------------------------
+            // <copyright file="$FileName$.cs" company="$CompanyName$">
+            //     Copyright (c) $CompanyName$. All rights reserved.
+            // </copyright>
+            //-----------------------------------------------------------------------
+            $end$
+        ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>
