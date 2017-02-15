@@ -4,7 +4,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace PHM.Maths.Words.Services.Core
+namespace PHM.Math.Words.Services.Core
 {
     using System.Threading.Tasks;
 

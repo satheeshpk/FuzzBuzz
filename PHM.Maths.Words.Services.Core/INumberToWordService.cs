@@ -4,12 +4,12 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace PHM.Maths.Words.Services.Core
+namespace PHM.Math.Words.Services.Core
 {
     /// <summary>
     /// Number to word service contract
     /// </summary>
-    /// <seealso cref="PHM.Maths.Words.Services.Core.IWordService{System.Int32}" />
+    /// <seealso cref="PHM.Math.Words.Services.Core.IWordService{System.Int32}" />
     public interface INumberToWordService : IWordService<int>
     {
     }
