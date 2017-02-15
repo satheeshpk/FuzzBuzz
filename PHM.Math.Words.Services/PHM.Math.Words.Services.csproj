@@ -35,8 +35,13 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\PHM.Maths.Words.Services.Core\PHM.Math.Words.Services.Core.csproj">
+      <Project>{8e6f224e-55e3-4827-b414-082adcc97c19}</Project>
+      <Name>PHM.Math.Words.Services.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FuzzBuzzWordService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
