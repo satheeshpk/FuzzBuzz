@@ -55,9 +55,24 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WordServiceFactoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PHM.Math.Words.Services.Factory\PHM.Math.Words.Services.Factory.csproj">
+      <Project>{cb639809-5183-4142-bf60-0cdd1e802855}</Project>
+      <Name>PHM.Math.Words.Services.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PHM.Math.Words.Services\PHM.Math.Words.Services.csproj">
+      <Project>{08EBD10D-1F07-4091-830C-18077B320F46}</Project>
+      <Name>PHM.Math.Words.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PHM.Maths.Words.Services.Core\PHM.Math.Words.Services.Core.csproj">
+      <Project>{8E6F224E-55E3-4827-B414-082ADCC97C19}</Project>
+      <Name>PHM.Math.Words.Services.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
