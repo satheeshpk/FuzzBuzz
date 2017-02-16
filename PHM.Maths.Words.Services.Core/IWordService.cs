@@ -17,8 +17,8 @@ namespace PHM.Math.Words.Services.Core
         /// <summary>
         /// Gets the word.
         /// </summary>
-        /// <param name="value">The value.</param>
+        /// <param name="input">The input.</param>
         /// <returns>the word</returns>
-        Task<string> GetWord(T value);
+        Task<string> GetWord(T input);
     }
 }
