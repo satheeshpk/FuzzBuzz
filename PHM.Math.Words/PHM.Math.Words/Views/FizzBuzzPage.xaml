@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:PHM.Math.Words.Controls;assembly=PHM.Math.Words.Controls"
+             x:Class="PHM.Math.Words.Views.FizzBuzzPage">
+  <StackLayout Style="{StaticResource verticalLayout}" 
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand" 
+               x:Name="layoutFizzBuzz">
+    <Label Text="Enter a number" Style="{StaticResource inputLabel}" x:Name="label"></Label>
+    <controls:NumberEntry Number="{Binding Number, Mode=OneWayToSource}" x:Name="numberEntry" StyleId="numberEntry" AutomationId="numberEntry"/>
+    <Button Text="Fizz Buzz" Command="{Binding FizzBuzz}" x:Name="fizzBuzzButton" StyleId="fizzBuzzButton" AutomationId="fizzBuzzButton"/>
+    <Label Text="{Binding FizzBuzzResult}" Style="{StaticResource resultLabel}"
+           x:Name="fizzBuzzResult" StyleId="fizzBuzzResult" AutomationId="fizzBuzzResult"/>
+  </StackLayout>
+</ContentPage>

@@ -6,12 +6,12 @@
 
 namespace PHM.Math.Words.ViewModels
 {
+    using System;
     using System.ComponentModel;
     using System.Threading.Tasks;
     using System.Windows.Input;
     using Services.Factory;
     using Xamarin.Forms;
-    using System;
 
     /// <summary>
     /// Fizz Buzz View Model
